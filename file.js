@@ -27,9 +27,37 @@ if("Modernizr" in window) {
     return ("blobBuilder" in window);
   });
 
-  Modernizr.addTest("typedarray", function() {a
+  Modernizr.addTest("blob", function() {
+    return ("Blob" in window);
+  });
+
+  Modernizr.addTest("typedarray", function() {
     return ("Uint8Array" in window ||
              "Uint16Array" in window);
+  });
+
+  Modernizr.addTest("file", function () {
+    return ("File" in window);
+  });
+
+  Modernizr.addTest("filereader", function() {
+    return ("FileReader" in window);
+  });
+
+  Modernizr.addTest("filewriter", function () {
+    return ("FileWriter" in window);
+  });
+
+  Modernizr.addTest("filesaver", function() {
+    return ("FileSaver" in window);
+  });
+
+  Modernizr.addTest("filelist", function() {
+    return ("FileList" in window);
+  });
+
+  Modernizr.addTest("filesystem", function() {
+    return ("requestFileSystem" in window);
   });
 }
 
