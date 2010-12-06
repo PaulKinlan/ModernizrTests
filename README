@@ -1,0 +1,3 @@
+A collection of tests that you can include in Modernizr
+
+Test are defined in a collection based on their type.  For instance testing support for FileAPI's might overlap with WebGL tests based on support for shared API's
